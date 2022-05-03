@@ -2,14 +2,12 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   state = {
-    count: 1,
-    imageUrl: "https://picsum.photos/200",
+    count: 0,
   };
   render() {
     return (
       <React.Fragment>
-        <img src={this.state.imageUrl} alt="" />
-        <span> {this.fromatCount()} </span>
+        <span className="badge badge-primary"> {this.fromatCount()} </span>
         <button> Incresment </button>
       </React.Fragment>
     );
